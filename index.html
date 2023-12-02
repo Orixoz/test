@@ -19,18 +19,50 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            padding: 10px 30px;
         }
         .todolist_title{
             text-align: center;
             font-size: 30px;
             font-weight: 900;
+            font-family: sans-serif;
+        }
+        .inputWrap {
+            display: flex;
+        }
+        .todo_input {
+            width: 100%;
+            border: 2px solid #9f7700;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .todo_submitBtn {
+            background:#489cc1;
+            border: none;
+            color: #FFF;
+            width: 40px;
+            height: 40px;
+            margin-left: 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="todolist_wrap">
-        <div class="todolist_title">To Do List</div> 
-
+        <div class="todolist_title">TODOLIST</div> 
+        <div class="inputWrap">
+            <input type="text" class="todo_input" placeholder="請輸入行程">
+            <button class="todo_submitBtn">+</button>
+        </div>
+        <ul>
+            <li>read the book</li>
+            <li>buy dog food</li>
+        </ul>
+        <div>
+            <span>1 of 2 tacks done</span>
+            <button>Remove checked</button>
+        </div>
     </div>
 </body>
 </html>
